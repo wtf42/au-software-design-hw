@@ -20,6 +20,7 @@ public class CommandFactory {
             .put("pwd", PwdCommand.class)
             .put("exit", ExitCommand.class)
             .put("=", EnvironmentAssignCommand.class)
+            .put("grep", GrepCommand.class)
             .build();
 
     /**
