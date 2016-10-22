@@ -22,6 +22,8 @@ public class CommandFactoryTest {
                 CommandFactory.createCommand(new String[] {"pwd"}).getClass());
         assertEquals(WcCommand.class,
                 CommandFactory.createCommand(new String[] {"wc"}).getClass());
+        assertEquals(GrepCommand.class,
+                CommandFactory.createCommand(new String[] {"grep", "s"}).getClass());
     }
 
     @Test(expected = InvalidCommandException.class)
