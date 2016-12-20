@@ -21,6 +21,8 @@ public class CommandFactory {
             .put("exit", ExitCommand.class)
             .put("=", EnvironmentAssignCommand.class)
             .put("grep", GrepCommand.class)
+            .put("ls", LsCommand.class)
+            .put("cd", CdCommand.class)
             .build();
 
     /**
